@@ -71,7 +71,7 @@
 }
 
 #image-area {
-  text-align: center;
+  justify-content: left;
   grid-area: image-area;
 }
 

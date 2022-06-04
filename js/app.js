@@ -14,6 +14,7 @@ const resumeBtn = document.querySelector('#resume')
 const contactBtn = document.querySelector('#contact')
 const titleText = document.querySelector('#title')
 const pageText = document.querySelector('#text-area')
+const imageSpace = document.querySelector('#image-area')
 
 
 /*----------------------------- Event Listeners -----------------------------*/
@@ -24,7 +25,7 @@ contactBtn.addEventListener('click', showContact)
 
 /*-------------------------------- Functions --------------------------------*/
 function homePage() {
-  
+
 }
 
 function showContact() {
@@ -41,6 +42,7 @@ function showAbout() {
 }
 function showWork() {
   pageText.innerHTML = "Here are some projects I've done"
+  imageSpace.innerHTML = '<a href="https://nicktactoe.netlify.app/" target="_blank"><img src ="./assets/tttImg.png"></a>'
   titleText.textContent = 'Work'
 }
 
