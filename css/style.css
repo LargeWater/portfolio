@@ -1,4 +1,4 @@
-.container {
+/* .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 4em 1fr;
@@ -11,9 +11,19 @@
     "image-area image-area text-area- text-area"
     "image-area image-area text-area- text-area"
     ". . . .";
+} */
+
+.container {
+  color: #2c363f;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: stretch;
+  align-content: stretch;
 }
 :root {
-  --sans-serif: 'League Spartan', sans-serif;
+  --sans-serif: "League Spartan", sans-serif;
 }
 #about {
   text-align: center;
@@ -72,10 +82,10 @@
 }
 
 #image-area {
-  justify-content: left;
-  /* grid-area: image-area; */
-  display: inline-block;
-  object-fit: contain;
+  justify-content: center;
+  grid-area: image-area;
+  display: grid;
+  /* object-fit: contain; */
   padding: 5% 15% 45% 5%;
 }
 
@@ -108,7 +118,7 @@
   font-family: var(--sans-serif);
 }
 html {
-  background-color: #F2F5EA;
+  background-color: #f2f5ea;
 }
 .nav-div {
   text-shadow: 10px 5px 15px #2c363f97;
@@ -129,7 +139,7 @@ html {
     transform: scale(1);
   }
 }
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px) {
   * {
     font-size: 90%;
     padding-top: 2%;

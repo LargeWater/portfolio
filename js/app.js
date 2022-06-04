@@ -11,14 +11,14 @@ const contactBtn = document.querySelector("#contact");
 const titleText = document.querySelector("#title");
 const pageText = document.querySelector("#text-area");
 const imageSpace = document.querySelector("#image-area");
-const homeBtn = document.querySelector("#home-btn")
+const homeBtn = document.querySelector("#home-btn");
 
 /*----------------------------- Event Listeners -----------------------------*/
 aboutBtn.addEventListener("click", showAbout);
 workBtn.addEventListener("click", showWork);
 resumeBtn.addEventListener("click", showResume);
 contactBtn.addEventListener("click", showContact);
-homeBtn.addEventListener("click", homePage)
+homeBtn.addEventListener("click", homePage);
 
 /*-------------------------------- Functions --------------------------------*/
 function homePage() {
@@ -36,13 +36,12 @@ function showContact() {
 }
 function showResume() {
   pageText.innerHTML = "";
-  imageSpace.innerHTML = resumeHtml
+  imageSpace.innerHTML = resumeHtml;
   titleText.textContent = "Resume";
 }
 function showAbout() {
-  pageText.innerHTML =
-    aboutMeText
-    imageSpace.innerHTML= ''
+  pageText.innerHTML = aboutMeText;
+  imageSpace.innerHTML = "";
   titleText.textContent = "About me";
 }
 function showWork() {
