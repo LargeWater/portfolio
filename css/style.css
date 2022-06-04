@@ -1,16 +1,16 @@
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 4em 1fr 1fr 1fr 1fr;
+  grid-template-rows: 4em 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   color: #2C363F;
   grid-template-areas:
     "about work resume contact"
     ". title title ."
-    "image-area image-area text-area- text-area"
-    "image-area image-area text-area- text-area"
-    ". . . .";
+    /* "image-area image-area text-area- text-area"
+    "image-area image-area text-area- text-area" */
+    /* ". . . ."; */
 }
 :root {
   --sans-serif: 'League Spartan', sans-serif;
@@ -72,7 +72,10 @@
 
 #image-area {
   justify-content: left;
-  grid-area: image-area;
+  /* grid-area: image-area; */
+  display: flex;
+  object-fit: contain;
+  padding: 5% 15% 0 5%;
 }
 
 #text-area {
@@ -82,6 +85,7 @@
   font-size: 3em;
   font-weight: 400;
   padding-right: 5%;
+  padding-top: 10%;
 }
 
 #title {

@@ -42,7 +42,7 @@ function showAbout() {
 }
 function showWork() {
   pageText.innerHTML = "Here are some projects I've done"
-  imageSpace.innerHTML = '<a href="https://nicktactoe.netlify.app/" target="_blank"><img src ="./assets/tttImg.png"></a>'
+  imageSpace.innerHTML = '<a href="https://nicktactoe.netlify.app/" target="_blank"><img src ="./assets/tttImg.png" style="width: auto;height: auto;max-width: 500px;max-height:500px;"></a>'
   titleText.textContent = 'Work'
 }
 
