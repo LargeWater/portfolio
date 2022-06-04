@@ -1,4 +1,5 @@
-.container {  display: grid;
+.container {
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 4em 1fr 1fr 1fr 1fr;
   gap: 0px 0px;
@@ -10,18 +11,58 @@
     "image-area image-area text-area- text-area-"
     ". . . .";
 }
+:root {
+  --sans-serif: 'Quicksand', sans-serif;
+}
+.about {
+  text-align: center;
+  grid-area: about;
+  font-family: var(--sans-serif);
+  font-size: 2em;
+  font-weight: 400;
+}
 
-.about { grid-area: about; }
+.work {
+  text-align: center;
+  grid-area: work;
+  font-family: var(--sans-serif);
+  font-size: 2em;
+  font-weight: 400;
+}
 
-.work { grid-area: work; }
+.resume {
+  text-align: center;
+  grid-area: resume;
+  font-family: var(--sans-serif);
+  font-size: 2em;
+  font-weight: 400;
+}
 
-.resume { grid-area: resume; }
+.contact {
+  text-align: center;
+  grid-area: contact;
+  font-family: var(--sans-serif);
+  font-size: 2em;
+  font-weight: 400;
+}
 
-.contact { grid-area: contact; }
+.image-area {
+  text-align: center;
+  grid-area: image-area;
+}
 
-.image-area { grid-area: image-area; }
+.text-area- {
+  text-align: right;
+  grid-area: text-area-;
+  font-family: var(--sans-serif);
+  font-size: 3em;
+  font-weight: 400;
+}
 
-.text-area- { grid-area: text-area-; }
-
-.title- { grid-area: title-; }
-
+.title- {
+  text-align: center;
+  grid-area: title-;
+  font-size: 4em;
+  font-weight: 500;
+  font-family: var(--sans-serif);
+}
