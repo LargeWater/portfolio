@@ -76,7 +76,7 @@
   /* grid-area: image-area; */
   display: inline-block;
   object-fit: contain;
-  padding: 5% 15% 0 5%;
+  padding: 5% 15% 45% 5%;
 }
 
 #text-area {
@@ -101,15 +101,34 @@
 }
 #home-btn {
   text-align: center;
-  padding-top: 45%;
+  /* padding-top: 45%; */
   font-size: 2em;
   font-weight: 500;
+  text-shadow: 10px 5px 15px #2c363f97;
   font-family: var(--sans-serif);
 }
 html {
   background-color: #F2F5EA;
 }
-
+.nav-div {
+  text-shadow: 10px 5px 15px #2c363f97;
+}
+.nav-div:hover {
+  animation-name: scale;
+  animation-duration: 1s;
+}
+#home-btn:hover {
+  animation-name: scale;
+  animation-duration: 1s;
+}
+@keyframes scale {
+  0% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 @media only screen and (max-width: 768px){
   * {
     font-size: 90%;
