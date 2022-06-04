@@ -7,7 +7,7 @@
   color: #2C363F;
   grid-template-areas:
     "about work resume contact"
-    ". title- title- ."
+    ". title title ."
     "image-area image-area text-area- text-area-"
     "image-area image-area text-area- text-area-"
     ". . . .";
@@ -15,44 +15,48 @@
 :root {
   --sans-serif: 'League Spartan', sans-serif;
 }
-.about {
+#about {
   text-align: center;
   grid-area: about;
   font-family: var(--sans-serif);
   font-size: 2em;
   font-weight: 400;
+  padding: 2%;
 }
 
-.work {
+#work {
   text-align: center;
   grid-area: work;
   font-family: var(--sans-serif);
   font-size: 2em;
   font-weight: 400;
+  padding: 2%;
 }
 
-.resume {
+#resume {
   text-align: center;
   grid-area: resume;
   font-family: var(--sans-serif);
   font-size: 2em;
   font-weight: 400;
+  padding: 2%;
 }
 
-.contact {
+#contact {
   text-align: center;
   grid-area: contact;
   font-family: var(--sans-serif);
   font-size: 2em;
   font-weight: 400;
+  padding: 2% 0;
 }
 
-.image-area {
+#image-area {
   text-align: center;
   grid-area: image-area;
 }
 
-.text-area- {
+#text-area- {
   text-align: right;
   grid-area: text-area-;
   font-family: var(--sans-serif);
@@ -60,9 +64,9 @@
   font-weight: 400;
 }
 
-.title- {
+#title {
   text-align: center;
-  grid-area: title-;
+  grid-area: title;
   font-size: 4em;
   font-weight: 500;
   font-family: var(--sans-serif);
