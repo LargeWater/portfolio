@@ -12,16 +12,35 @@ const aboutBtn = document.querySelector('#about')
 const workBtn = document.querySelector('#work')
 const resumeBtn = document.querySelector('#resume')
 const contactBtn = document.querySelector('#contact')
+const titleText = document.querySelector('#title')
+const pageText = document.querySelector('#text-area')
 
 
 /*----------------------------- Event Listeners -----------------------------*/
-aboutBtn.addEventListener('click', handleClick)
-workBtn.addEventListener('click', handleClick)
-resumeBtn.addEventListener('click', handleClick)
-contactBtn.addEventListener('click', handleClick)
+aboutBtn.addEventListener('click', showAbout)
+workBtn.addEventListener('click', showWork)
+resumeBtn.addEventListener('click', showResume)
+contactBtn.addEventListener('click', showContact)
 
 /*-------------------------------- Functions --------------------------------*/
-
-function handleClick() {
-  console.log('click')
+function homePage() {
+  
 }
+
+function showContact() {
+  pageText.innerHTML = "Here's where to get in contact with me:"
+  titleText.textContent = 'Contact'
+}
+function showResume() {
+  pageText.innerHTML = "Here's where to get in contact with me:"
+  titleText.textContent = 'Resume'
+}
+function showAbout() {
+  pageText.innerHTML = ""
+  titleText.textContent = 'About me'
+}
+function showWork() {
+  pageText.innerHTML = "Here are some projects I've done"
+  titleText.textContent = 'Work'
+}
+
