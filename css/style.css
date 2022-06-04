@@ -8,9 +8,9 @@
   grid-template-areas:
     "about work resume contact"
     ". title title ."
-    /* "image-area image-area text-area- text-area"
-    "image-area image-area text-area- text-area" */
-    /* ". . . ."; */
+    "image-area image-area text-area- text-area"
+    "image-area image-area text-area- text-area"
+    ". . . .";
 }
 :root {
   --sans-serif: 'League Spartan', sans-serif;
@@ -22,6 +22,7 @@
   font-size: 2em;
   font-weight: 400;
   padding: 5%;
+  box-sizing: border-box;
 }
 /* #about::before {  
   transform: scaleX(0);
@@ -73,19 +74,21 @@
 #image-area {
   justify-content: left;
   /* grid-area: image-area; */
-  display: flex;
+  display: inline-block;
   object-fit: contain;
   padding: 5% 15% 0 5%;
 }
 
 #text-area {
   text-align: right;
-  grid-area: text-area-;
+  grid-area: text-area;
   font-family: var(--sans-serif);
   font-size: 3em;
   font-weight: 400;
   padding-right: 5%;
   padding-top: 10%;
+  padding-left: 9ch;
+  max-width: 65ch;
 }
 
 #title {
@@ -109,7 +112,18 @@ html {
 
 @media only screen and (max-width: 768px){
   * {
-    font-size: 80%;
-    font-weight: 300;
+    font-size: 90%;
+    padding-top: 2%;
+  }
+  #text-area {
+    padding: 1px;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  * {
+    padding-top: 1%;
   }
 }
