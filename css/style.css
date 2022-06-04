@@ -96,6 +96,20 @@
   font-family: var(--sans-serif);
   padding-top: 6%;
 }
+#home-btn {
+  text-align: center;
+  padding-top: 45%;
+  font-size: 2em;
+  font-weight: 500;
+  font-family: var(--sans-serif);
+}
 html {
   background-color: #F2F5EA;
+}
+
+@media only screen and (max-width: 768px){
+  * {
+    font-size: 80%;
+    font-weight: 300;
+  }
 }

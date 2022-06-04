@@ -1,48 +1,52 @@
 /*-------------------------------- Constants --------------------------------*/
 
-
-
 /*-------------------------------- Variables --------------------------------*/
-
-
 
 /*------------------------ Cached Element References ------------------------*/
 
-const aboutBtn = document.querySelector('#about')
-const workBtn = document.querySelector('#work')
-const resumeBtn = document.querySelector('#resume')
-const contactBtn = document.querySelector('#contact')
-const titleText = document.querySelector('#title')
-const pageText = document.querySelector('#text-area')
-const imageSpace = document.querySelector('#image-area')
-
+const aboutBtn = document.querySelector("#about");
+const workBtn = document.querySelector("#work");
+const resumeBtn = document.querySelector("#resume");
+const contactBtn = document.querySelector("#contact");
+const titleText = document.querySelector("#title");
+const pageText = document.querySelector("#text-area");
+const imageSpace = document.querySelector("#image-area");
+const homeBtn = document.querySelector("#home-btn")
 
 /*----------------------------- Event Listeners -----------------------------*/
-aboutBtn.addEventListener('click', showAbout)
-workBtn.addEventListener('click', showWork)
-resumeBtn.addEventListener('click', showResume)
-contactBtn.addEventListener('click', showContact)
+aboutBtn.addEventListener("click", showAbout);
+workBtn.addEventListener("click", showWork);
+resumeBtn.addEventListener("click", showResume);
+contactBtn.addEventListener("click", showContact);
+homeBtn.addEventListener("click", homePage)
 
 /*-------------------------------- Functions --------------------------------*/
 function homePage() {
-
+  pageText.innerHTML =
+    "Nick is a Houston, TX based <br />software engineer and musician.";
+  titleText.textContent = "Nicholas Bailey";
+  imageSpace.innerHTML =
+    '<img src ="./assets/profilepic.jpg" style="width: auto;height: auto;max-width: 350px;max-height:350px;">';
 }
 
 function showContact() {
-  pageText.innerHTML = "Here's where to get in contact with me:"
-  titleText.textContent = 'Contact'
+  pageText.innerHTML = "Here's where to get in contact with me:";
+  imageSpace.innerHTML =
+    '<img src="./assets/github.jpg" style ="width: auto;height: auto;max-width: 200px;max-height:200px;"><img src="./assets/linkedin.jpeg" style="width: auto;height: auto;max-width: 200px;max-height:200px;><img src="./assets/gmail.jpeg" style="width: auto;height: auto;max-width: 200px;max-height:200px;">';
+  titleText.textContent = "Contact";
 }
 function showResume() {
-  pageText.innerHTML = "Here's where to get in contact with me:"
-  titleText.textContent = 'Resume'
+  pageText.innerHTML = "My previous experience";
+  titleText.textContent = "Resume";
 }
 function showAbout() {
-  pageText.innerHTML = ""
-  titleText.textContent = 'About me'
+  pageText.innerHTML =
+    "Nice to meet you! I'm a musician currently attending a Software Engineering bootcamp at General Assembly. I love simple and efficient code, minimal and powerful design, and loud but pretty music. I always aim to make my projects accessible and inclusive. Please reach out on my contact page if you would like to know more!";
+  titleText.textContent = "About me";
 }
 function showWork() {
-  pageText.innerHTML = "Here are some projects I've done"
-  imageSpace.innerHTML = '<a href="https://nicktactoe.netlify.app/" target="_blank"><img src ="./assets/tttImg.png" style="width: auto;height: auto;max-width: 500px;max-height:500px;"></a>'
-  titleText.textContent = 'Work'
+  pageText.innerHTML = "Here are some projects I've done";
+  imageSpace.innerHTML =
+    '<a href="https://nicktactoe.netlify.app/" target="_blank"><img src ="./assets/tttImg.png" style="width: auto;height: auto;max-width: 500px;max-height:500px;"></a>';
+  titleText.textContent = "Work";
 }
-
