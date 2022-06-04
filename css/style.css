@@ -1,0 +1,27 @@
+.container {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 4em 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "about work resume contact"
+    ". title- title- ."
+    "image-area image-area text-area- text-area-"
+    "image-area image-area text-area- text-area-"
+    ". . . .";
+}
+
+.about { grid-area: about; }
+
+.work { grid-area: work; }
+
+.resume { grid-area: resume; }
+
+.contact { grid-area: contact; }
+
+.image-area { grid-area: image-area; }
+
+.text-area- { grid-area: text-area-; }
+
+.title- { grid-area: title-; }
+
