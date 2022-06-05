@@ -1,7 +1,7 @@
 /*-------------------------------- Constants --------------------------------*/
 import { aboutMeText, resumeHtml, contactHtml } from "./data.js";
 /*-------------------------------- Variables --------------------------------*/
-
+let currentPage;
 /*------------------------ Cached Element References ------------------------*/
 
 const aboutBtn = document.querySelector("#about");
@@ -22,6 +22,8 @@ homeBtn.addEventListener("click", homePage);
 
 /*-------------------------------- Functions --------------------------------*/
 function homePage() {
+  resetFont();
+  // currentPage = 'home'
   pageText.innerHTML =
     "Nick is a Houston, TX based software engineer and musician.";
   titleText.textContent = "Nicholas Bailey";
@@ -30,23 +32,43 @@ function homePage() {
 }
 
 function showContact() {
+  resetFont();
+  // currentPage = 'contact'
+  contactBtn.style.fontSize = "3em";
   pageText.innerHTML = "Here's where to get in contact with me:";
   imageSpace.innerHTML = contactHtml;
-  titleText.textContent = "Contact";
+  titleText.textContent = "";
 }
 function showResume() {
+  resetFont();
+  // currentPage = 'resume'
+  resumeBtn.style.fontSize = "3em";
   pageText.innerHTML = "";
   imageSpace.innerHTML = resumeHtml;
-  titleText.textContent = "Resume";
+  titleText.textContent = "";
 }
 function showAbout() {
+  resetFont();
+  // currentPage = 'about'
+  aboutBtn.style.fontSize = "3em";
   pageText.innerHTML = aboutMeText;
   imageSpace.innerHTML = "";
-  titleText.textContent = "About me";
+  titleText.textContent = "";
 }
 function showWork() {
+  resetFont();
+  // currentPage = 'work'
+  workBtn.style.fontSize = "3em";
   pageText.innerHTML = "Here are some projects I've done";
   imageSpace.innerHTML =
     '<a href="https://nicktactoe.netlify.app/" target="_blank"><img src ="./assets/tttImg.png" style="width: auto;height: auto;max-width: 350px;max-height:350px;"></a>';
-  titleText.textContent = "Work";
+  titleText.textContent = "";
+}
+
+function resetFont() {
+  aboutBtn.style.fontSize = "2em";
+  homeBtn.style.fontSize = "2em";
+  contactBtn.style.fontSize = "2em";
+  workBtn.style.fontSize = "2em";
+  resumeBtn.style.fontSize = "2em";
 }
