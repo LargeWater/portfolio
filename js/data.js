@@ -5,6 +5,6 @@ const aboutMeText =
   "Nice to meet you! I'm a musician currently attending a Software Engineering bootcamp at General Assembly. I love simple and efficient code, minimal and powerful design, and loud but pretty music. I always aim to make my projects accessible and inclusive. Please reach out on my contact page if you would like to know more!";
 
 const contactHtml =
-  '<a href="https://www.github.com/largewater" target="_blank"><img src="./assets/GitHub.png" style ="width: auto;height: auto;"></a><a href="https://www.linkedin.com/in/largewater/" target="_blank"><img src="./assets/linkedin.png" style="width: auto;height: auto;></a><a href="mailto:nickcyg1992@gmail.com><img src="./assets/gmail.png" style="width: auto;height: auto;"></a>';
+  '<a href="https://www.github.com/largewater" target="_blank"><img src="./assets/GitHub.png" style ="width: auto;height: auto;"></a><a href="https://www.linkedin.com/in/largewater/" target="_blank"><img src="./assets/linkedin.png" style="width: auto;height: auto;></a><a href="mailto:nickcyg1992@gmail.com><img src="./assets/gmail.png"</a>';
 
 export { aboutMeText, resumeHtml, contactHtml };
