@@ -1,5 +1,5 @@
 /*-------------------------------- Constants --------------------------------*/
-import { aboutMeText, resumeHtml, contactHtml } from "./data.js"
+import { aboutMeText, resumeHtml, contactHtml, workHtml,homeHtml } from "./data.js"
 /*-------------------------------- Variables --------------------------------*/
 /*------------------------ Cached Element References ------------------------*/
 const aboutBtn = document.querySelector("#about")
@@ -22,8 +22,7 @@ function homePage() {
   pageText.innerHTML =
     "Nick is a Houston, TX based software engineer and musician."
   titleText.textContent = "Nicholas Bailey"
-  imageSpace.innerHTML =
-    '<img src ="./assets/profilepic.jpg" style="width: auto;height: auto;max-width: 350px;max-height:350px;">'
+  imageSpace.innerHTML = homeHtml
 }
 function showContact() {
   resetFont()
@@ -50,8 +49,7 @@ function showWork() {
   resetFont();
   workBtn.style.fontSize = "4em"
   pageText.innerHTML = "Here are some projects I've done:"
-  imageSpace.innerHTML =
-    '<a href="https://nicktactoe.netlify.app/" target="_blank"><img src ="./assets/tttImg.png" style="width: auto;height: auto;max-width: 350px;max-height:350px;"></a>'
+  imageSpace.innerHTML = workHtml
   titleText.textContent = ""
 }
 function resetFont() {
