@@ -27,29 +27,29 @@ function homePage() {
 }
 function showContact() {
   resetFont()
-  contactBtn.style.fontSize = "3em"
+  contactBtn.style.fontSize = "4em"
   pageText.innerHTML = "Here's where to get in contact with me:"
   imageSpace.innerHTML = contactHtml
   titleText.textContent = ""
 }
 function showResume() {
   resetFont();
-  resumeBtn.style.fontSize = "3em"
+  resumeBtn.style.fontSize = "4em"
   pageText.innerHTML = ""
   imageSpace.innerHTML = resumeHtml
   titleText.textContent = ""
 }
 function showAbout() {
   resetFont();
-  aboutBtn.style.fontSize = "3em"
+  aboutBtn.style.fontSize = "4em"
   pageText.innerHTML = aboutMeText
   imageSpace.innerHTML = ""
   titleText.textContent = ""
 }
 function showWork() {
   resetFont();
-  workBtn.style.fontSize = "3em"
-  pageText.innerHTML = "Here are some projects I've done"
+  workBtn.style.fontSize = "4em"
+  pageText.innerHTML = "Here are some projects I've done:"
   imageSpace.innerHTML =
     '<a href="https://nicktactoe.netlify.app/" target="_blank"><img src ="./assets/tttImg.png" style="width: auto;height: auto;max-width: 350px;max-height:350px;"></a>'
   titleText.textContent = ""
