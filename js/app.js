@@ -1,9 +1,7 @@
 /*-------------------------------- Constants --------------------------------*/
 import { aboutMeText, resumeHtml, contactHtml } from "./data.js"
 /*-------------------------------- Variables --------------------------------*/
-let currentPage
 /*------------------------ Cached Element References ------------------------*/
-
 const aboutBtn = document.querySelector("#about")
 const workBtn = document.querySelector("#work")
 const resumeBtn = document.querySelector("#resume")
@@ -12,14 +10,12 @@ const titleText = document.querySelector("#title")
 const pageText = document.querySelector("#text-area")
 const imageSpace = document.querySelector("#image-area")
 const homeBtn = document.querySelector("#home-btn")
-
 /*----------------------------- Event Listeners -----------------------------*/
 aboutBtn.addEventListener("click", showAbout)
 workBtn.addEventListener("click", showWork)
 resumeBtn.addEventListener("click", showResume)
 contactBtn.addEventListener("click", showContact)
 homeBtn.addEventListener("click", homePage)
-
 /*-------------------------------- Functions --------------------------------*/
 function homePage() {
   resetFont()
@@ -29,7 +25,6 @@ function homePage() {
   imageSpace.innerHTML =
     '<img src ="./assets/profilepic.jpg" style="width: auto;height: auto;max-width: 350px;max-height:350px;">'
 }
-
 function showContact() {
   resetFont()
   contactBtn.style.fontSize = "3em"
@@ -46,7 +41,6 @@ function showResume() {
 }
 function showAbout() {
   resetFont();
-
   aboutBtn.style.fontSize = "3em"
   pageText.innerHTML = aboutMeText
   imageSpace.innerHTML = ""
@@ -60,7 +54,6 @@ function showWork() {
     '<a href="https://nicktactoe.netlify.app/" target="_blank"><img src ="./assets/tttImg.png" style="width: auto;height: auto;max-width: 350px;max-height:350px;"></a>'
   titleText.textContent = ""
 }
-
 function resetFont() {
   aboutBtn.style.fontSize = "2em"
   homeBtn.style.fontSize = "2em"
