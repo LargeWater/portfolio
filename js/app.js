@@ -1,5 +1,5 @@
 /*-------------------------------- Constants --------------------------------*/
-import { aboutMeText, resumeHtml, contactHtml, workHtml,homeHtml } from "./data.js"
+import { aboutMeText, resumeHtml, contactHtml, homeHtml, works } from "./data.js"
 /*-------------------------------- Variables --------------------------------*/
 /*------------------------ Cached Element References ------------------------*/
 const aboutBtn = document.querySelector("#about")
@@ -34,8 +34,8 @@ function showContact() {
 function showResume() {
   resetFont();
   resumeBtn.style.fontSize = "4em"
-  pageText.innerHTML = ""
-  imageSpace.innerHTML = resumeHtml
+  pageText.innerHTML = resumeHtml
+  imageSpace.innerHTML = ''
   titleText.textContent = ""
 }
 function showAbout() {
@@ -49,8 +49,17 @@ function showWork() {
   resetFont();
   workBtn.style.fontSize = "4em"
   pageText.innerHTML = "Here are some projects I've done:"
-  imageSpace.innerHTML = workHtml
+  // imageSpace.innerHTML = workHtml
   titleText.textContent = ""
+  imageSpace.innerHTML = works.map(work => {
+    `<section>
+    <div>${work.title}</div>
+    <div>${work.description}</div>
+    <div> <a href ="${work.github}" target="_blank">GitHub</a></div>
+    <div><a href="${work.deploy}" target="_blank"><img src="${work.image}"></div>
+    </section>`
+  })
+  console.log(imageSpace.innerHTML)
 }
 function resetFont() {
   aboutBtn.style.fontSize = "2em"
@@ -59,3 +68,6 @@ function resetFont() {
   workBtn.style.fontSize = "2em"
   resumeBtn.style.fontSize = "2em"
 }
+// function clearPage() {
+//   const 
+// }
