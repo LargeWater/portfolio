@@ -25,6 +25,7 @@ homeBtn.addEventListener("click", homePage);
 /*-------------------------------- Functions --------------------------------*/
 function homePage() {
   resetFont();
+  homeBtn.style.fontSize = '3em'
   pageText.innerHTML =
     "Nick is a Houston, TX based software engineer and musician.";
   titleText.textContent = "Nicholas Bailey";
@@ -32,21 +33,21 @@ function homePage() {
 }
 function showContact() {
   resetFont();
-  contactBtn.style.fontSize = "4em";
+  contactBtn.style.fontSize = "3em";
   pageText.innerHTML = "Here's where to get in contact with me:";
   imageSpace.innerHTML = contactHtml;
   titleText.textContent = "";
 }
 function showResume() {
   resetFont();
-  resumeBtn.style.fontSize = "4em";
+  resumeBtn.style.fontSize = "3em";
   pageText.innerHTML = resumeHtml;
   imageSpace.innerHTML = "";
   titleText.textContent = "";
 }
 function showAbout() {
   resetFont();
-  aboutBtn.style.fontSize = "4em";
+  aboutBtn.style.fontSize = "3em";
   pageText.innerHTML = aboutMeText;
   imageSpace.innerHTML = "";
   titleText.textContent = "";
@@ -54,7 +55,7 @@ function showAbout() {
 
 function showWork() {
   resetFont();
-  workBtn.style.fontSize = "4em";
+  workBtn.style.fontSize = "3em";
   imageSpace.innerHTML = "";
   titleText.textContent = "";
   works.map(({ title, image, description, github, deploy }) => {
@@ -62,7 +63,7 @@ function showWork() {
       <div>${title}</div>
       <div>${description}</div>
       <div> <a href ="${github}" target="_blank">GitHub</a></div>
-      <div><a href="${deploy}" target="_blank"><img src="${image}"></div>
+      <div><a href="${deploy}" target="_blank"><img src="${image}" style='width: auto;height:auto;max-width:340px;max-height:340px;'></div>
     </div>`;
   });
 }
