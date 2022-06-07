@@ -25,7 +25,7 @@ homeBtn.addEventListener("click", homePage);
 /*-------------------------------- Functions --------------------------------*/
 function homePage() {
   resetFont();
-  homeBtn.style.fontSize = '3em'
+  homeBtn.style.fontSize = "3em";
   pageText.innerHTML =
     "Nick is a Houston, TX based software engineer and musician.";
   titleText.textContent = "Nicholas Bailey";
