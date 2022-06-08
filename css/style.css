@@ -19,6 +19,7 @@
   top: 0;
   left: 0;
   padding: 2% 3% 2% 0;
+  z-index: 1;
 }
 #home-btn {
   font-size: 3em;
@@ -72,7 +73,7 @@ hr.solid {
 #title {
   text-align: center;
   justify-content: center;
-  color: #bbc7a4;
+  color: #c9d7af;
   /* display: flex; */
   font-size: 5em;
   font-weight: 500;
@@ -98,6 +99,8 @@ hr.solid {
   margin-bottom: 45%;
   margin-left: 25%;
   color: #bbc7a4;
+  filter: invert(25%);
+  box-shadow: inset
 }
 #samsara {
   color: #9e7682;
@@ -190,6 +193,7 @@ a:link{
     padding-left: 15%;
     padding-right: 1;
     left: 20%;
+    
   }
   .side-nav,
   .nav-div {
@@ -206,10 +210,12 @@ a:link{
   #samsara{
     bottom: 50%;
     max-width: 12%;
+    font-size: 7px;
   }
   #hourglass{
     bottom: 47%;
     max-width: 12%;
+    font-size: 7px;
   }
 }
 
