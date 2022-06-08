@@ -8,6 +8,8 @@ import {
 } from "./data.js"
 /*-------------------------------- Variables --------------------------------*/
 /*------------------------ Cached Element References ------------------------*/
+// const samsara = new Audio('./assets/music/samsara.mp3')
+// const hourglass = new Audio('./assets/music/hourglass.wav')
 const aboutBtn = document.querySelector("#about")
 const workBtn = document.querySelector("#work")
 const resumeBtn = document.querySelector("#resume")
@@ -16,6 +18,8 @@ const titleText = document.querySelector("#title")
 const pageText = document.querySelector("#text-area")
 const imageSpace = document.querySelector("#image-area")
 const homeBtn = document.querySelector("#home-btn")
+// const samBtn = document.getElementById('samsara')
+// const hourBtn = getElementById('hourglass')
 /*----------------------------- Event Listeners -----------------------------*/
 aboutBtn.addEventListener("click", showAbout)
 workBtn.addEventListener("click", showWork)
@@ -49,7 +53,8 @@ function showAbout() {
   resetFont();
   aboutBtn.style.fontSize = "3em"
   pageText.innerHTML = aboutMeText
-  imageSpace.innerHTML = ""
+  imageSpace.innerHTML = `<button id='samsara' type="button" class="btn">Play Samsara</button>
+  <button id='hourglass' type="button" class="btn">Play Hourglass</button>`
   titleText.textContent = ""
 }
 
@@ -75,3 +80,13 @@ function resetFont() {
   workBtn.style.fontSize = "2em"
   resumeBtn.style.fontSize = "2em"
 }
+
+// samBtn.addEventListener('click', function(evt){
+//   samsara.volume = .10
+//   samsara.play()
+// })
+
+// hourBtn.addEventListener('click', function(evt){
+//   hourglass.volume = .10
+//   hourglass.play()
+// })
