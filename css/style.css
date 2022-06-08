@@ -137,6 +137,9 @@ a:visited{
 a:hover{
   color: #8AA39B;
 }
+a:link{
+  color: #964756;
+}
 .nav-div:hover {
   /* animation-name: scale; */
   /* animation-duration: 1s; */

@@ -8,8 +8,8 @@ import {
 } from "./data.js"
 /*-------------------------------- Variables --------------------------------*/
 /*------------------------ Cached Element References ------------------------*/
-const samsara = new Audio('./assets/music/samsara.mp3')
-const hourglass = new Audio('./assets/music/hourglass.mp3')
+const samsara = new Audio('./assets/audio/samsara.mp3')
+const hourglass = new Audio('./assets/audio/hourglass.mp3')
 const aboutBtn = document.querySelector("#about")
 const workBtn = document.querySelector("#work")
 const resumeBtn = document.querySelector("#resume")
