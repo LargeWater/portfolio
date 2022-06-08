@@ -84,15 +84,19 @@ samBtn.addEventListener('click', function(evt){
   samsara.volume = .10
   if(samsara.paused){
     samsara.play()
+    samBtn.innerText = 'Pause'
   } else {
     samsara.pause()
+    samBtn.innerText = 'Play Samsara'
   }
 })
 hourBtn.addEventListener('click', function(evt){
   hourglass.volume = .10
   if(hourglass.paused){
     hourglass.play()
+    hourBtn.innerText = 'Pause'
   } else {
     hourglass.pause()
+    hourBtn.innerText = 'Play Hourglass'
   }
 })
