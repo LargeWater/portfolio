@@ -112,6 +112,15 @@ hr.solid {
   /* width: 15%; */
   margin-left: 0.4%;
 }
+#samsara:hover{
+  background-color: #9e7682;
+  color: #d6dbd2;
+
+}
+#hourglass:hover{
+background-color: #9e7682;
+color: #d6dbd2;
+}
 #hourglass {
   color: #9e7682;
   justify-content: right;
@@ -163,10 +172,13 @@ a:link{
     font-size: 90%;
     padding-left: 1%;
   }
+  #title{
+    margin: 0;
+  }
   #text-area {
     padding: 10% 0;
-    padding-left: 15%;
-    left: 35%;
+    padding-left: 10%;
+    left: 10%;
     justify-content: center;
     text-align: center;
   }
