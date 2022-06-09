@@ -88,7 +88,7 @@ function playMusic(){
     musicText.innerText = 'Now playing: Samsara by Angel Aura'
   } else {
     samsara.pause()
-    playBtn.innerText = '▶'
+    playBtn.innerHTML = '&#9658'
     musicText.innerText = ''
   }
 }

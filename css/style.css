@@ -45,7 +45,7 @@
 }
 #play {
   list-style: none;
-  font-family: var(--sans-serif);
+  font-family: sans-serif;
   font-weight: 600;
   margin: 10px 0;
   align-items: center;
@@ -136,6 +136,7 @@ a:link {
   }
   #title {
     margin: 0;
+    padding-left: 20%;
   }
   #text-area {
     padding: 10% 0;
@@ -159,21 +160,12 @@ a:link {
     font-size: 2ch;
     padding-left: 5%;
   }
-  #home-btn {
-    /* padding-left: 1px; */
+  #contact{
+    font-size: 10px;
   }
-  #title {
-    padding-left: 20%;
-  }
-  #samsara {
-    bottom: 50%;
-    max-width: 12%;
-    font-size: 7px;
-  }
-  #hourglass {
-    bottom: 47%;
-    max-width: 12%;
-    font-size: 7px;
+  #play {
+    padding-left: 1px;
+    font-size: 14px;
   }
 }
 @media only screen and (max-width: 1024px) {
