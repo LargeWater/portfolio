@@ -67,7 +67,7 @@ function showWork() {
       <div>${title}</div>
       <div>${description}</div>
       <div> <a href ="${github}" target="_blank">GitHub</a></div>
-      <div><a href="${deploy}" target="_blank"><img src="${image}" style='width: auto;height:auto;max-width:340px;max-height:340px;'></div>
+      <div><a href="${deploy}" target="_blank"><img src="${image}" style='width: auto;height:auto;max-width:340px;max-height:340px;justify-content: center;text-align:center;'></div>
     </div>`
   })
 }
