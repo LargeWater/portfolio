@@ -62,14 +62,14 @@ function showWork() {
   workBtn.style.fontSize = "3em"
   imageSpace.innerHTML = ""
   titleText.textContent = ""
-  works.map(({ title, image, description, github, deploy }) => {
-    pageText.innerHTML = `<div>
-      <div>${title}</div>
-      <div>${description}</div>
-      <div> <a href ="${github}" target="_blank">GitHub</a></div>
-      <div><a href="${deploy}" target="_blank"><img src="${image}" style='width: auto;height:auto;max-width:340px;max-height:340px;justify-content: center;text-align:center;'></div>
+  pageText.innerHTML = works.map(work => 
+    `<div>
+      <div>${work.title}</div>
+      <div>${work.description}</div>
+      <div> <a href ="${work.github}" target="_blank">GitHub</a></div>
+      <div><a href="${work.deploy}" target="_blank"><img src="${work.image}" style='width: auto;height:auto;max-width:340px;max-height:340px;justify-content: center;text-align:center;'></a></div>
     </div>`
-  })
+  ).join('')
 }
 
 function resetFont() {
