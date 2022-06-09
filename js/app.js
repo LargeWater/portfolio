@@ -85,7 +85,7 @@ function playMusic(){
   if(samsara.paused){
     samsara.play()
     playBtn.innerText = '||'
-    musicText.innerText = 'Now playing: Samsara by Angel Aura'
+    musicText.innerText = 'Now playing: Samsara by Angel Aura(my band!)'
   } else {
     samsara.pause()
     playBtn.innerHTML = '&#9658'
