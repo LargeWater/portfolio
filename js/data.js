@@ -18,6 +18,13 @@ const works = [
     github: "https://github.com/LargeWater/ttt-weekend",
     deploy: "https://nicktactoe.netlify.app/",
   },
-];
+  // {
+  //   title: 'placeholder',
+  //   image: '',
+  //   description: "lorem as well as ipsum, not to mention dolor sit amet.",
+  //   github: '#',
+  //   deploy: '#',
+  // },
+]
 
 export { aboutMeText, resumeHtml, contactHtml, homeHtml, works };
