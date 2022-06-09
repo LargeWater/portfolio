@@ -9,7 +9,6 @@ import {
 /*-------------------------------- Variables --------------------------------*/
 /*------------------------ Cached Element References ------------------------*/
 const samsara = new Audio('./assets/audio/samsara.mp3')
-// const hourglass = new Audio('./assets/audio/hourglass.mp3')
 const aboutBtn = document.querySelector("#about")
 const workBtn = document.querySelector("#work")
 const resumeBtn = document.querySelector("#resume")
@@ -18,8 +17,6 @@ const titleText = document.querySelector("#title")
 const pageText = document.querySelector("#text-area")
 const imageSpace = document.querySelector("#image-area")
 const homeBtn = document.querySelector("#home-btn")
-// const samBtn = document.getElementById('samsara')
-// const hourBtn = document.getElementById('hourglass')
 const playBtn = document.getElementById('play')
 const musicText = document.getElementById('music-text')
 /*----------------------------- Event Listeners -----------------------------*/
@@ -82,36 +79,6 @@ function resetFont() {
   workBtn.style.fontSize = "2em"
   resumeBtn.style.fontSize = "2em"
 }
-
-// samBtn.addEventListener('click', function(evt){
-//   samsara.volume = .10
-//   if(samsara.paused){
-//     samsara.play()
-//     samBtn.innerText = 'Pause'
-//   } else {
-//     samsara.pause()
-//     samBtn.innerText = 'Play Samsara'
-//   }
-//   if(hourglass.play()){
-//     hourglass.pause()
-//     hourBtn.innerText = 'Play Hourglass'
-//   }
-// })
-
-// hourBtn.addEventListener('click', function(evt){
-//   hourglass.volume = .10
-//   if(hourglass.paused){
-//     hourglass.play()
-//     hourBtn.innerText = 'Pause'
-//   } else {
-//     hourglass.pause()
-//     hourBtn.innerText = 'Play Hourglass'
-//   }
-//   if(samsara.play()){
-//     samsara.pause()
-//     samBtn.innerText = 'Play Samsara'
-//   }
-// })
 
 function playMusic(){
   samsara.volume = .10

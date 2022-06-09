@@ -18,7 +18,6 @@
   font-weight: 500;
   font-family: var(--sans-serif);
   margin: 10px 0;
-  
 }
 #about {
   list-style: none;
@@ -44,7 +43,7 @@
   font-weight: 400;
   margin: 10px 0;
 }
-#play{
+#play {
   list-style: none;
   font-family: var(--sans-serif);
   font-weight: 600;
@@ -53,7 +52,7 @@
   justify-content: center;
   font-size: 2em;
 }
-#play:hover{
+#play:hover {
   color: #9e7682;
 }
 ul {
@@ -93,7 +92,7 @@ hr.solid {
   background-size: contain;
   line-height: 2ch;
 }
-#music-text{
+#music-text {
   font-family: var(--sans-serif);
 }
 
@@ -103,13 +102,13 @@ html {
 .nav-div {
   font-size: 2em;
 }
-a:visited{
+a:visited {
   color: #964756;
 }
-a:hover{
-  color: #7494EA;
+a:hover {
+  color: #7494ea;
 }
-a:link{
+a:link {
   color: #964756;
 }
 .nav-div:hover {
@@ -135,7 +134,7 @@ a:link{
     font-size: 90%;
     padding-left: 1%;
   }
-  #title{
+  #title {
     margin: 0;
   }
   #text-area {
@@ -153,7 +152,6 @@ a:link{
     /* padding-left: 15%; */
     padding-right: 1;
     left: 10%;
-    
   }
   .side-nav,
   .nav-div {
@@ -167,25 +165,24 @@ a:link{
   #title {
     padding-left: 20%;
   }
-  #samsara{
+  #samsara {
     bottom: 50%;
     max-width: 12%;
     font-size: 7px;
   }
-  #hourglass{
+  #hourglass {
     bottom: 47%;
     max-width: 12%;
     font-size: 7px;
   }
 }
-
 @media only screen and (max-width: 1024px) {
   .side-nav,
   nav-div {
     max-width: 13%;
     font-size: 1ch;
   }
-  hr.solid{
+  hr.solid {
     max-width: 80%;
   }
 }
