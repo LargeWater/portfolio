@@ -10,7 +10,7 @@ const aboutMeText =
 const contactHtml =
   '<a href="https://www.github.com/largewater" target="_blank"><img src="./assets/images/GitHub.png" style ="width: auto;height: auto;"></a><a href="https://www.linkedin.com/in/largewater/" target="_blank"><img src="./assets/images/linkedin.png"></a><a href="mailto:nickcyg1992@gmail.com"target="_blank"><img src="./assets/images/gmail.png"</a><a href="https://www.instagram.com/large_beer/?hl=en" target="_blank"><img src="./assets/images/ig.png"</a>';
 
-const musicHtml = `<p>I have played guitar for 18 years and been in various projects of different styles. Most recently, I was in a band with my fiancee called <a href='angelaura.bandcamp.com' target='_blank'>Angel Aura</a>.I also have solo instrumental music under the name <a href='splitsignal.bandcamp.com' target='_blank'> Split Signal</a>. I ALSO post little bits and snippets of ideas on my Instagram(linked in contact) and my <a href='tiktok.com/@largebeer' target='_blank'>TikTok</a>. I'm always open to collaboration when I'm available!</p>`
+const musicHtml = `<p>I have played guitar for 18 years and been in various projects of different styles. Most recently, I was in a band with my fiancee called <a href='https://angelaura.bandcamp.com/' target='_blank'>Angel Aura</a>.I also have solo instrumental music under the name <a href='https://splitsignal.bandcamp.com/releases' target='_blank'> Split Signal</a>. I ALSO post little bits and snippets of ideas on my Instagram(linked in contact) and my <a href='https://www.tiktok.com/@largebeer?lang=en' target='_blank'>TikTok</a>. I'm always open to collaboration when I'm available!</p>`
 
 const works = [
   {
