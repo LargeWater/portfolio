@@ -43,6 +43,12 @@
   font-weight: 400;
   margin: 10px 0;
 }
+#music{
+  list-style: none;
+  font-family: var(--sans-serif);
+  font-weight: 400;
+  margin: 10px 0;
+}
 #play {
   list-style: none;
   font-family: sans-serif;
