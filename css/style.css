@@ -95,7 +95,6 @@ hr.solid {
 #samsara:hover{
   background-color: #9e7682;
   color: #d6dbd2;
-
 }
 #hourglass:hover{
 background-color: #9e7682;
@@ -121,7 +120,7 @@ a:visited{
   color: #964756;
 }
 a:hover{
-  color: #8AA39B;
+  color: #7494EA;
 }
 a:link{
   color: #964756;
