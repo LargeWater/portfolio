@@ -20,13 +20,13 @@ const works = [
     github: "https://github.com/LargeWater/ttt-weekend",
     deploy: "https://nicktactoe.netlify.app/",
   },
-  // {
-  //   title: 'placeholder',
-  //   image: '',
-  //   description: "lorem as well as ipsum, not to mention dolor sit amet.",
-  //   github: '#',
-  //   deploy: '#',
-  // },
+  {
+    title: 'Rig Builder',
+    image: '',
+    description: "An app to add pieces of gear to profile",
+    github: 'https://github.com/LargeWater/rig-builder',
+    deploy: 'https://nicks-rig-builder.herokuapp.com/',
+  },
 ]
 
 export { aboutMeText, resumeHtml, contactHtml, homeHtml, works, musicHtml };
