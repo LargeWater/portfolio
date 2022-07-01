@@ -22,7 +22,7 @@ const works = [
   },
   {
     title: 'Rig Builder',
-    image: './assets/images/scr1.png',
+    image: './assets/images/scr3.png',
     description: "An app to add pieces of gear to your profile",
     github: 'https://github.com/LargeWater/rig-builder',
     deploy: 'https://nicks-rig-builder.herokuapp.com/',
