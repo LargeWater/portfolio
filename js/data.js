@@ -30,6 +30,7 @@ const works = [
   {
     title: 'Code-ipedia',
     image: './assets/images/scr4.png',
+    description: 'a MERN stack app to save and share code snippets',
     github: 'https://github.com/jsantia85/code-ipedia-front-end',
     deploy: 'https://code-ipedia.netlify.app/'
   }
