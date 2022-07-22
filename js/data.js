@@ -27,6 +27,12 @@ const works = [
     github: 'https://github.com/LargeWater/rig-builder',
     deploy: 'https://nicks-rig-builder.herokuapp.com/',
   },
+  {
+    title: 'Code-ipedia',
+    image: './assets/images/scr4.png',
+    github: 'https://github.com/jsantia85/code-ipedia-front-end',
+    deploy: 'https://code-ipedia.netlify.app/'
+  }
 ]
 
 export { aboutMeText, resumeHtml, contactHtml, homeHtml, works, musicHtml };
